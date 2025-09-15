@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Poster Rating & Reviews</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rate & Review This Movie Poster</h1>
+
+        <div class="poster">
+            <img src="https://via.placeholder.com/300x450.png?text=Movie+Poster" alt="Movie Poster">
+        </div>
+
+        <!-- Rating Section -->
+        <div class="rating-section">
+            <p>Give your rating:</p>
+            <div class="stars">
+                <span data-value="1">&#9733;</span>
+                <span data-value="2">&#9733;</span>
+                <span data-value="3">&#9733;</span>
+                <span data-value="4">&#9733;</span>
+                <span data-value="5">&#9733;</span>
+            </div>
+            <p class="average-rating">Average Rating: <span id="avgRating">0</span> / 5</p>
+        </div>
+
+        <!-- Comment Section -->
+        <div class="comment-section">
+            <h2>Leave a Review</h2>
+            <textarea id="commentInput" placeholder="Write your review here..."></textarea>
+            <button id="submitComment">Submit</button>
+            <div id="commentList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
